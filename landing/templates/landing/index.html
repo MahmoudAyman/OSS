@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="{% static 'landing/static/css/style.css'%}" />
+      <script src="{% static 'landing/static/js/slide.js'%}"></script>
+
+    <title>OPEN SOURCE SPORTS</title>
+  </head>
+
+  <body >
+    <video poster="http://fablab.waag.org/content/home/home_poster.jpg" autoplay loop muted preload   id="bgvid" playsinline autoplay muted loop>
+      <source src="https://player.vimeo.com/external/153100779.hd.mp4?s=4b40becdd14dcee45ba6f36275e3bad83df056b3&profile_id=119">
+    </video>
+
+    <div id="polina">
+    <img src="{% static 'landing/static/img/OSS2.png'%}" height="70%" width="70%" style="padding-left: 13%">
+    </div>
+
+    <div style="margin-top: 2%; margin-left: 45%">
+      <nav class="cl-effect-1">
+                <a href="" style="text-decoration: none;">Gallery</a>
+                <a href="" style="text-decoration: none;">Collaborators<ins></ins></a>
+                <a href="" style="text-decoration: none;">Register<ins></ins></a>
+
+      </nav>
+    </div>
+
+  </body>
+</html>
