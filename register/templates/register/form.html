@@ -14,11 +14,11 @@
         <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
         <meta name="author" content="Codrops" />
         <link rel="shortcut icon" href="../favicon.ico"> 
-        <link rel="stylesheet" type="text/css" href="{% static 'courses/static/css/demo.css'%}" />
-        <link rel="stylesheet" type="text/css" href="{% static 'courses/static/css/style.css'%}" />
-		<link rel="stylesheet" type="text/css" href="{% static 'courses/static/css/animate-custom.css'%}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'register/css/demo.css'%}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'register/css/style.css'%}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'register/css/animate-custom.css'%}" />
     </head>
-    <body style="background: #fff url({% static 'courses/static/img/bg.jpg'%}) repeat top left;"" >
+    <body style="background: #fff url({% static 'register/img/bg.jpg'%}) repeat top left;"" >
         <div class="container">
             <!-- Codrops top bar -->
             <!-- Codrops top bar -->
@@ -38,7 +38,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="{% url 'courses:login'%}" autocomplete="on" method="POST"> 
+                            <form  action="{% url 'register:login'%}" autocomplete="on" method="POST"> 
                                 {% csrf_token %}
                                 <h1>Log in</h1> 
                                 <p> 
@@ -64,7 +64,7 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="{% url 'courses:signup'%}" autocomplete="on" method="POST" enctype="multipart/form-data"> 
+                            <form  action="{% url 'register:signup'%}" autocomplete="on" method="POST" enctype="multipart/form-data"> 
                                 {% csrf_token %}
                                 <h1> Sign up </h1> 
                                 <p> 

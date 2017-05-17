@@ -23,7 +23,7 @@ def logIn(request):
 			usr.save()
 			request.session['member_id'] = usr.id
 			request.session.set_expiry(0)
-			return HttpResponseRedirect(reverse('courses:index'))
+			return HttpResponseRedirect(reverse('landing:index'))
 		else: 
 			return render(request, "register/form.html", context)
 def checkAuth (request):
@@ -70,6 +70,6 @@ def signUp(request):
 		# output = ImageOps.fit(im, mask.size, centering=(0.5, 0.5))
 		# output.putalpha(mask)
 		# output.save(file + "-thumbnail"+".png")
-		return HttpResponseRedirect(reverse('register:index'))
+		return HttpResponseRedirect(reverse('landing:index'))
 
 # Create your views here.
