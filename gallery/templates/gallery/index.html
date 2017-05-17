@@ -41,9 +41,9 @@
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li><a href="">HOME</a></li>
-				<li><a  href=""><span>Collaborators</span></a></li>
-				<li><a href=""><span>Sign Up</span></a></li>
+				<li><a href="{% url 'landing:index'%}">HOME</a></li>
+				<li><a  href="{% url 'members:index'%}"><span>Collaborators</span></a></li>
+				<li><a href="{% url 'register:form'%}"><span>Sign Up</span></a></li>
 			</ul>
 
 			<header>
