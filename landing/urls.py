@@ -7,4 +7,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^gallery/', include('gallery.urls')),
     url(r'^collaborators/', include('members.urls')),
+    url(r'^register/', include('register.urls'), name='register'),
 ]

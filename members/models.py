@@ -25,14 +25,14 @@ class UploadToPathAndRename(object):
         # return the whole path to the file
         return os.path.join(self.sub_path, filename)
 
-class Member(models.Model):
-    first_name = models.CharField(max_length=200)
-    last_name = models.CharField(max_length=200)
-    email = models.CharField(max_length=200)
-    pwd = models.CharField(max_length=200)
-    logged_in = models.BooleanField(default=False)
-    img = models.ImageField(upload_to=UploadToPathAndRename(os.path.join(settings.MEDIA_ROOT, 'upload')))    
-    # upload_date=models.DateTimeField(auto_now_add =True)
+# class Member(models.Model):
+#     first_name = models.CharField(max_length=200)
+#     last_name = models.CharField(max_length=200)
+#     email = models.CharField(max_length=200)
+#     pwd = models.CharField(max_length=200)
+#     logged_in = models.BooleanField(default=False)
+#     img = models.ImageField(upload_to=UploadToPathAndRename(os.path.join(settings.MEDIA_ROOT, 'upload')))    
+#     # upload_date=models.DateTimeField(auto_now_add =True)
 
-    def __str__ (self):
-        return self.last_name
+#     def __str__ (self):
+#         return self.last_name
