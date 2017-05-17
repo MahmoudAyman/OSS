@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from register.models import *
@@ -71,5 +72,7 @@ def signUp(request):
 		# output.putalpha(mask)
 		# output.save(file + "-thumbnail"+".png")
 		return HttpResponseRedirect(reverse('landing:index'))
+=======
+>>>>>>> master
 
 # Create your views here.

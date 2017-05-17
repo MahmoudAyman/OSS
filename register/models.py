@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+<<<<<<< HEAD
 from django.forms import ModelForm
 
 from django.utils.deconstruct import deconstructible
@@ -19,3 +20,7 @@ class Member(models.Model):
     	return self.last_name
 
         
+=======
+
+# Create your models here.
+>>>>>>> master
